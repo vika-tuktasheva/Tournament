@@ -34,7 +34,7 @@ public class Game {
     public int round(String playerName1, String playerName2) {
         int strengthPlayer1 = strengthFound(playerName1);
         int strengthPlayer2 = strengthFound(playerName2);
-    //если хотя бы один из игроков не зарегистрирован - выкидываем исключение
+        //если хотя бы один из игроков не зарегистрирован - выкидываем исключение
         if (strengthPlayer1 == 0) {
             throw new NotRegisteredException("Первый игрок не зарегистрирован!");
         }
